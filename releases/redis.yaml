@@ -8,7 +8,7 @@ spec:
   chart:
     repository: https://charts.bitnami.com/bitnami
     name: redis
-    version: latest
+    version: 10.6.0
   values:
     generateBasicAuth: true
     serviceType: LoadBalancer
