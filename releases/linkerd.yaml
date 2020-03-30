@@ -7,4 +7,4 @@ spec:
   releaseName: linkerd 
   chart:
     repository: https://helm.linkerd.io/stable
-    version: latest
+    version: 2.7.0
