@@ -10,7 +10,4 @@ spec:
     name: redis
     version: 10.6.0
   values:
-    generateBasicAuth: true
-    serviceType: LoadBalancer
-    operator:
-      create: true
+    usePassword: false
