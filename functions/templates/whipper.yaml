@@ -1,0 +1,9 @@
+---
+apiVersion: openfaas.com/v1alpha2
+kind: Function
+metadata:
+  name: whipper
+spec:
+  name: whipper
+  image: {{ .Values.certinfo.image }}
+
