@@ -5,5 +5,8 @@
 certinfo:
   image: stefanprodan/certinfo:1.0.0
 
+whipper:
+  image: ajmwagar/whipper:latest
+
 podinfo:
   image: stefanprodan/podinfo:3.1.0
