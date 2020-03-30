@@ -1,17 +1,16 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: whipper-redis
+  name: redis
   namespace: db
 spec:
-  releaseName: redis
+  releaseName: redis 
   chart:
     repository: https://charts.bitnami.com/bitnami
     name: redis
     version: latest
   values:
     generateBasicAuth: true
-    exposeServices: false
     serviceType: LoadBalancer
     operator:
       create: true
