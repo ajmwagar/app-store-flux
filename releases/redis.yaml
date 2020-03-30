@@ -1,0 +1,17 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: whipper-redis
+  namespace: openfaas-fn
+spec:
+  releaseName: redis
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: redis
+    version: latest
+  values:
+    generateBasicAuth: true
+    exposeServices: false
+    serviceType: LoadBalancer
+    operator:
+      create: true
