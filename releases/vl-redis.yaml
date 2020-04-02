@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: vl-redis
+  namespace: db
+spec:
+  releaseName: vl-redis 
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: redis
+    version: 10.6.0
+  values:
+    usePassword: false
