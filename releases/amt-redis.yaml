@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: amt-redis
+  namespace: db
+spec:
+  releaseName: amt-redis 
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: amt-redis
+    version: 10.6.0
+  values:
+    usePassword: false
